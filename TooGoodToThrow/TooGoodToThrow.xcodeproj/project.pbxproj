@@ -11,6 +11,13 @@
 		C630B82623F72FD3004B6148 /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82523F72FD3004B6148 /* ContactoViewController.swift */; };
 		C630B82823F7E77C004B6148 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82723F7E77C004B6148 /* FavoritesViewController.swift */; };
 		C630B82C23F7F050004B6148 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82B23F7F050004B6148 /* FAQViewController.swift */; };
+		C630B82E23F805B2004B6148 /* BuscadorBigCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82D23F805B2004B6148 /* BuscadorBigCollectionViewCell.swift */; };
+		C630B83023F81025004B6148 /* FinalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82F23F81025004B6148 /* FinalObject.swift */; };
+		C630B83223F81068004B6148 /* FinalObjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B83123F81068004B6148 /* FinalObjectController.swift */; };
+		C630B83423F81075004B6148 /* ListFinalObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B83323F81075004B6148 /* ListFinalObjects.swift */; };
+		C630B83623F81085004B6148 /* ListObjectsToReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B83523F81085004B6148 /* ListObjectsToReuse.swift */; };
+		C630B83823F8108D004B6148 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B83723F8108D004B6148 /* Material.swift */; };
+		C630B83A23F8109E004B6148 /* ObjectToReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B83923F8109E004B6148 /* ObjectToReuse.swift */; };
 		C6390EB423F7103300570363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6390EB323F7103300570363 /* AppDelegate.swift */; };
 		C6390EB623F7103300570363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6390EB523F7103300570363 /* SceneDelegate.swift */; };
 		C6390EB823F7103300570363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6390EB723F7103300570363 /* ViewController.swift */; };
@@ -27,6 +34,13 @@
 		C630B82523F72FD3004B6148 /* ContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoViewController.swift; sourceTree = "<group>"; };
 		C630B82723F7E77C004B6148 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		C630B82B23F7F050004B6148 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		C630B82D23F805B2004B6148 /* BuscadorBigCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscadorBigCollectionViewCell.swift; sourceTree = "<group>"; };
+		C630B82F23F81025004B6148 /* FinalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalObject.swift; sourceTree = "<group>"; };
+		C630B83123F81068004B6148 /* FinalObjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalObjectController.swift; sourceTree = "<group>"; };
+		C630B83323F81075004B6148 /* ListFinalObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFinalObjects.swift; sourceTree = "<group>"; };
+		C630B83523F81085004B6148 /* ListObjectsToReuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListObjectsToReuse.swift; sourceTree = "<group>"; };
+		C630B83723F8108D004B6148 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		C630B83923F8109E004B6148 /* ObjectToReuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectToReuse.swift; sourceTree = "<group>"; };
 		C6390EB023F7103300570363 /* TooGoodToThrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooGoodToThrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6390EB323F7103300570363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6390EB523F7103300570363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				C6390EB323F7103300570363 /* AppDelegate.swift */,
+				C630B83923F8109E004B6148 /* ObjectToReuse.swift */,
 				C6390EB523F7103300570363 /* SceneDelegate.swift */,
 				C6390EB723F7103300570363 /* ViewController.swift */,
 				C6390EB923F7103300570363 /* Main.storyboard */,
@@ -84,6 +99,12 @@
 				C630B82323F725F3004B6148 /* MyTableTableViewCell.swift */,
 				C630B82523F72FD3004B6148 /* ContactoViewController.swift */,
 				C630B82B23F7F050004B6148 /* FAQViewController.swift */,
+				C630B82D23F805B2004B6148 /* BuscadorBigCollectionViewCell.swift */,
+				C630B82F23F81025004B6148 /* FinalObject.swift */,
+				C630B83123F81068004B6148 /* FinalObjectController.swift */,
+				C630B83323F81075004B6148 /* ListFinalObjects.swift */,
+				C630B83523F81085004B6148 /* ListObjectsToReuse.swift */,
+				C630B83723F8108D004B6148 /* Material.swift */,
 			);
 			path = TooGoodToThrow;
 			sourceTree = "<group>";
@@ -160,13 +181,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6390EB823F7103300570363 /* ViewController.swift in Sources */,
+				C630B83023F81025004B6148 /* FinalObject.swift in Sources */,
 				C630B82823F7E77C004B6148 /* FavoritesViewController.swift in Sources */,
+				C630B82E23F805B2004B6148 /* BuscadorBigCollectionViewCell.swift in Sources */,
+				C630B83623F81085004B6148 /* ListObjectsToReuse.swift in Sources */,
 				C630B82623F72FD3004B6148 /* ContactoViewController.swift in Sources */,
+				C630B83A23F8109E004B6148 /* ObjectToReuse.swift in Sources */,
 				C630B82423F725F3004B6148 /* MyTableTableViewCell.swift in Sources */,
+				C630B83223F81068004B6148 /* FinalObjectController.swift in Sources */,
+				C630B83823F8108D004B6148 /* Material.swift in Sources */,
 				C630B82C23F7F050004B6148 /* FAQViewController.swift in Sources */,
 				C6390EB423F7103300570363 /* AppDelegate.swift in Sources */,
 				C6390EB623F7103300570363 /* SceneDelegate.swift in Sources */,
 				C6390EC823F7115500570363 /* HomeViewController.swift in Sources */,
+				C630B83423F81075004B6148 /* ListFinalObjects.swift in Sources */,
 				C6390ECA23F7122300570363 /* PerfilViewController.swift in Sources */,
 				C6390ECC23F7123100570363 /* BuscadorViewController.swift in Sources */,
 			);
