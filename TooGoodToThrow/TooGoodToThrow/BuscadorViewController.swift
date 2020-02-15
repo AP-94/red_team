@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Alamofire
+import SDWebImage
 
 private let reuseIdentifier = "MiCelda"
 private let itemsPerRow = 2
 private let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 10.0, right: 20.0)
+
 
 class BuscadorViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
@@ -19,7 +22,6 @@ class BuscadorViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(itemsPerRow)
 
     }
     
@@ -57,7 +59,6 @@ class BuscadorViewController: UIViewController, UICollectionViewDelegate, UIColl
         //Configurar la celda
         cell.backgroundColor = .orange
         cell.tituloProducto.text = "Index: \(indexPath.row)"
-        print(itemsPerRow)
         return cell
         
         

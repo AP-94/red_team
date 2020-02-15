@@ -2,17 +2,11 @@
 // To parse the JSON, add this file to your project and do:
 //
 //   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
-/*
+
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
-    let id: Int
-    let name: String
-    
-    enum CodingKeys: String, CodingKey {
-        case id, name
-    }
+class Material: Codable {
+    var id: Int?
+    var name: String?
 }
- */
-

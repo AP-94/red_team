@@ -5,7 +5,7 @@
 //  Created by user161846 on 1/29/20.
 //  Copyright © 2020 alumnos. All rights reserved.
 //
-/*
+
 import UIKit
 import Alamofire
 import SDWebImage
@@ -23,7 +23,7 @@ class TemarioViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        GetLessons{
+        GetObjectToReuse{
             print("Succesful")
             self.tableView.reloadData()
         }
@@ -95,4 +95,4 @@ class TemarioViewController: UIViewController, UITableViewDelegate, UITableViewD
 }
 
 
-*/
+

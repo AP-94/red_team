@@ -5,45 +5,45 @@
 //  Created by alumnos on 29/01/2020.
 //  Copyright © 2020 alumnos. All rights reserved.
 //
-/*
+
 import UIKit
 import Alamofire
 import SDWebImage
 
-var finalObjects = FinalObjects()
+var finalObjects = FinalObject()
 
-class UnidadViewController: UIViewController {
+class FinalObjectController: UIViewController {
     
-    @IBOutlet weak var unidadLabel: UILabel!
+    @IBOutlet weak var nombreLabel: UILabel!
     
-    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var explainLabel: UILabel!
     
     var myString: String? = ""
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        unidadLabel.text = myString
+        nombreLabel.text = myString
         
         GetFinalObjects {_ in
             print(finalObjects)
-            self.contentLabel.text = finalObjects.explain
+            self.explainLabel.text = finalObjects.explain
         }
         
     }
     
     //Peticion de Contenido del tema
-    func GetFinalObjects (completed: @escaping (Unidad) -> (Void)) {
+    func GetFinalObjects (completed: @escaping (FinalObject) -> (Void)) {
         let url = URL(string: "http://localhost:8888/ToGoodToThrow/public/api/object/\(id)")
         
         Alamofire.request(url!, method: .get, headers: nil).responseJSON { (response) in
             print(response)
             
             do {
-                finalObjects = try JSONDecoder().decode(Unidad.self, from: response.data!)
+                finalObjects = try JSONDecoder().decode(FinalObject.self, from: response.data!)
                 DispatchQueue.main.async{
                     print(finalObjects)
-                    self.unidadLabel.text = finalObjects.name
-                    self.contentLabel.text = finalObjects.explain
+                    self.nombreLabel.text = finalObjects.name
+                    self.explainLabel.text = finalObjects.explain
                 }
                 
             }catch {
@@ -59,6 +59,5 @@ class UnidadViewController: UIViewController {
     }
 
 }
- 
- */
+
 

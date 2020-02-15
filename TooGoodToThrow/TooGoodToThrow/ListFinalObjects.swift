@@ -4,7 +4,7 @@
 //
 //  Created by alumnos on 12/02/2020.
 //
-/*
+
 import UIKit
 import Alamofire
 import SDWebImage
@@ -15,7 +15,7 @@ class ListarUnidadesViewController: UIViewController, UITableViewDelegate, UITab
  
     @IBOutlet weak var tableView: UITableView!
     
-    var finalObjects = [FinalObjects]()
+    var finalObjects = [FinalObject]()
     var idString: String?
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,12 +37,12 @@ class ListarUnidadesViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return units.count
+        return finalObjects.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
-        cell.UnitsName.text = units[indexPath.row].name
+        cell.UnitsName.text = finalObjects[indexPath.row].name
         let baseURL = URL(string: "http://localhost:8888/ToGoodToThrow/storage/app/public/")!
         let placeholderImage = UIImage(named: "autoescuela-logo.png")
         let remoteImageURL = baseURL.appendingPathComponent(finalObjects[indexPath.row].img!)
@@ -61,12 +61,12 @@ class ListarUnidadesViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func GetFinalObjects (completed: @escaping () -> ()) {
-        let url = URL(string: "http://localhost:8888/ToGoodToThrow/public/api/unit/lesson/\(idObjects!)")
+        let url = URL(string: "http://localhost:8888/ToGoodToThrow/public/api/unit/lesson/\(idObjects)")
         Alamofire.request(url!, method: .get, headers: nil).responseJSON { (response) in
             print(response)
 
             do {
-                self.units = try JSONDecoder().decode([Unidades].self, from: response.data!)
+                self.finalObjects = try JSONDecoder().decode([FinalObject].self, from: response.data!)
                 DispatchQueue.main.async{
                     completed()
                 }
@@ -80,4 +80,4 @@ class ListarUnidadesViewController: UIViewController, UITableViewDelegate, UITab
     }
     
 }
- */
+
