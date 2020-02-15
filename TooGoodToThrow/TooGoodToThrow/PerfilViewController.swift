@@ -35,8 +35,16 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
-        if index == 0 {
+        
+        switch index {
+        case 0:
             self.launchScreenFavorites()
+        case 1:
+            self.launchScreenContacto()
+        case 2:
+            self.launchScreenFAQ()
+        default:
+            return
         }
         
     }
