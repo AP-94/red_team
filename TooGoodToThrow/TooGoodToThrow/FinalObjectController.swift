@@ -15,14 +15,13 @@ var finalObjects = FinalObject()
 class FinalObjectController: UIViewController {
     
     @IBOutlet weak var nombreLabel: UILabel!
-    
     @IBOutlet weak var explainLabel: UILabel!
     
     var myString: String? = ""
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        nombreLabel.text = myString
+        //nombreLabel.text = myString
         
         GetFinalObjects {_ in
             print(finalObjects)
@@ -33,7 +32,7 @@ class FinalObjectController: UIViewController {
     
     //Peticion de Contenido del tema
     func GetFinalObjects (completed: @escaping (FinalObject) -> (Void)) {
-        let url = URL(string: "http://localhost:8888/ToGoodToThrow/public/api/object/\(id)")
+        let url = URL(string: "http://localhost:8888/ToGoodToThrow-master/public/api/object/1")
         
         Alamofire.request(url!, method: .get, headers: nil).responseJSON { (response) in
             print(response)

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "10C99047-C2EF-4D67-82D9-6A5AEBFFD706"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06A39A94-7A7C-400C-8705-623BCA0361D2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TooGoodToThrow/FinalObjectController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "GetFinalObjects(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D33E329-0B75-4DD4-9002-5E54F3E52B22"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TooGoodToThrow/FinalObjectController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "GetFinalObjects(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1982C69B-36FF-4AE4-8049-C50331A41A92"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TooGoodToThrow/FinalObjectController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "GetFinalObjects(completed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1982C69B-36FF-4AE4-8049-C50331A41A92 - c516cedf03b7ab83"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TooGoodToThrow.FinalObjectController.GetFinalObjects(completed: (TooGoodToThrow.FinalObject) -&gt; ()) -&gt; ()"
+                  moduleName = "TooGoodToThrow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alessandropace/Desktop/RED_TEAM/TooGoodToThrow/TooGoodToThrow/FinalObjectController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "1982C69B-36FF-4AE4-8049-C50331A41A92 - 1b3dc2b801f43ea0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in TooGoodToThrow.FinalObjectController.GetFinalObjects(completed: (TooGoodToThrow.FinalObject) -&gt; ()) -&gt; ()"
+                  moduleName = "TooGoodToThrow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alessandropace/Desktop/RED_TEAM/TooGoodToThrow/TooGoodToThrow/FinalObjectController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "219">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "377DD426-FECF-4906-97DB-DC9F83DBB10D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TooGoodToThrow/FinalObjectController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "GetFinalObjects(completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

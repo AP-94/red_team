@@ -44,9 +44,8 @@ class ListarUnidadesViewController: UIViewController, UITableViewDelegate, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
         cell.UnitsName.text = finalObjects[indexPath.row].name
         let baseURL = URL(string: "http://localhost:8888/ToGoodToThrow/storage/app/public/")!
-        let placeholderImage = UIImage(named: "autoescuela-logo.png")
         let remoteImageURL = baseURL.appendingPathComponent(finalObjects[indexPath.row].img!)
-        cell.UnitsImage?.sd_setImage(with: remoteImageURL, placeholderImage: placeholderImage)
+        cell.UnitsImage?.sd_setImage(with: remoteImageURL)
         return cell
 
     }
