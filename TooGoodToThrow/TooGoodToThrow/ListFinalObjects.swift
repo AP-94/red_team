@@ -11,7 +11,7 @@ import SDWebImage
 
 var id:Int = 1
 
-class ListarUnidadesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListFinalObjectsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
  
     @IBOutlet weak var tableView: UITableView!
     
