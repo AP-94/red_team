@@ -16,6 +16,9 @@ class FinalObjectController: UIViewController {
     
     @IBOutlet weak var nombreLabel: UILabel!
     @IBOutlet weak var explainLabel: UILabel!
+    @IBOutlet weak var imageObject: UIImageView!
+    @IBOutlet weak var herramientas: UILabel!
+    @IBOutlet weak var dificultad: UILabel!
     
     var myString: String? = ""
     
@@ -32,17 +35,22 @@ class FinalObjectController: UIViewController {
     
     //Peticion de Contenido del tema
     func GetFinalObjects (completed: @escaping (FinalObject) -> (Void)) {
-        let url = URL(string: "http://localhost:8888/ToGoodToThrow-master/public/api/object/1")
+        let url = URL(string: "http://localhost:8888/ToGoodToThrow-master/public/api/object/\(id)")
         
         Alamofire.request(url!, method: .get, headers: nil).responseJSON { (response) in
-            print(response)
             
             do {
                 finalObjects = try JSONDecoder().decode(FinalObject.self, from: response.data!)
                 DispatchQueue.main.async{
-                    print(finalObjects)
                     self.nombreLabel.text = finalObjects.name
                     self.explainLabel.text = finalObjects.explain
+                    self.herramientas.text = finalObjects.tools
+                    self.dificultad.text = finalObjects.skill
+                    
+                    let baseURL = URL(string: "http://localhost:8888/ToGoodToThrow-master/storage/app/public/")!
+                    let remoteImageURL = baseURL.appendingPathComponent(finalObjects.img!)
+                    self.imageObject?.sd_setImage(with: remoteImageURL)
+                    
                 }
                 
             }catch {
@@ -57,6 +65,9 @@ class FinalObjectController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
+    @IBAction func close(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 

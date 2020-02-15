@@ -13,14 +13,17 @@ import SDWebImage
 private let reuseIdentifier = "MiCelda"
 private let itemsPerRow = 2
 private let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 10.0, right: 20.0)
+var id: Int = 1
 
 class BuscadorViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet weak var collectionView: UICollectionView!
+
+    var finalObjects = [FinalObject]()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        GetObjectToReuse{
+        GetfinalObject{
             print("Succesful")
             self.collectionView.reloadData()
         }
@@ -48,7 +51,7 @@ class BuscadorViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return objectToReuse.count
+        return finalObjects.count
         
     }
     
@@ -58,10 +61,10 @@ class BuscadorViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         
         //Configurar la celda
-        cell.tituloProducto.text = objectToReuse[indexPath.row].name
+        cell.tituloProducto.text = finalObjects[indexPath.row].name
         
         let baseURL = URL(string: "http://localhost:8888/ToGoodToThrow-master/storage/app/public/")!
-        let remoteImageURL = baseURL.appendingPathComponent(objectToReuse[indexPath.row].img!)
+        let remoteImageURL = baseURL.appendingPathComponent(finalObjects[indexPath.row].img!)
         cell.imagenProducto?.sd_setImage(with: remoteImageURL)
         
         
@@ -70,23 +73,22 @@ class BuscadorViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let index = indexPath.row
-        self.launchScreenFavorites()
-        print(indexPath.row)
+        id = indexPath.row + 1
+        self.launchScreenDetail()
     }
     
-    func launchScreenFavorites(){
+    func launchScreenDetail(){
         let vc:FinalObjectController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "FinalObjectController")
         self.present(vc, animated: true, completion: nil)
     }
     
     //Peticion de objetos
-       func GetObjectToReuse (completed: @escaping () -> ()) {
-           let url = URL(string: "http://localhost:8888/ToGoodToThrow-master/public/api/objecttoreuse")
+       func GetfinalObject (completed: @escaping () -> ()) {
+           let url = URL(string: "http://localhost:8888/ToGoodToThrow-master/public/api/object")
            Alamofire.request(url!, method: .get, headers: nil).responseJSON { (response) in
                print(response)
                do {
-                   objectToReuse = try JSONDecoder().decode([ObjectToReuse].self, from: response.data!)
+                   self.finalObjects = try JSONDecoder().decode([FinalObject].self, from: response.data!)
                    DispatchQueue.main.async{
                        completed()
                    }
