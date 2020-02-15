@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C630B82423F725F3004B6148 /* MyTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82323F725F3004B6148 /* MyTableTableViewCell.swift */; };
 		C630B82623F72FD3004B6148 /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82523F72FD3004B6148 /* ContactoViewController.swift */; };
+		C630B82823F7E77C004B6148 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82723F7E77C004B6148 /* FavoritesViewController.swift */; };
+		C630B82C23F7F050004B6148 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630B82B23F7F050004B6148 /* FAQViewController.swift */; };
 		C6390EB423F7103300570363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6390EB323F7103300570363 /* AppDelegate.swift */; };
 		C6390EB623F7103300570363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6390EB523F7103300570363 /* SceneDelegate.swift */; };
 		C6390EB823F7103300570363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6390EB723F7103300570363 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		C630B82323F725F3004B6148 /* MyTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableTableViewCell.swift; sourceTree = "<group>"; };
 		C630B82523F72FD3004B6148 /* ContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoViewController.swift; sourceTree = "<group>"; };
+		C630B82723F7E77C004B6148 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		C630B82B23F7F050004B6148 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C6390EB023F7103300570363 /* TooGoodToThrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooGoodToThrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6390EB323F7103300570363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6390EB523F7103300570363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,8 +80,10 @@
 				C6390EC723F7115500570363 /* HomeViewController.swift */,
 				C6390EC923F7122300570363 /* PerfilViewController.swift */,
 				C6390ECB23F7123100570363 /* BuscadorViewController.swift */,
+				C630B82723F7E77C004B6148 /* FavoritesViewController.swift */,
 				C630B82323F725F3004B6148 /* MyTableTableViewCell.swift */,
 				C630B82523F72FD3004B6148 /* ContactoViewController.swift */,
+				C630B82B23F7F050004B6148 /* FAQViewController.swift */,
 			);
 			path = TooGoodToThrow;
 			sourceTree = "<group>";
@@ -154,8 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6390EB823F7103300570363 /* ViewController.swift in Sources */,
+				C630B82823F7E77C004B6148 /* FavoritesViewController.swift in Sources */,
 				C630B82623F72FD3004B6148 /* ContactoViewController.swift in Sources */,
 				C630B82423F725F3004B6148 /* MyTableTableViewCell.swift in Sources */,
+				C630B82C23F7F050004B6148 /* FAQViewController.swift in Sources */,
 				C6390EB423F7103300570363 /* AppDelegate.swift in Sources */,
 				C6390EB623F7103300570363 /* SceneDelegate.swift in Sources */,
 				C6390EC823F7115500570363 /* HomeViewController.swift in Sources */,

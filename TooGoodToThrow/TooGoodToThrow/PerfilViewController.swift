@@ -33,7 +33,27 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.buttonImage.image = UIImage(named: buttonsList[indexPath.row])
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        if index == 0 {
+            self.launchScreenFavorites()
+        }
+        
+    }
     
+    func launchScreenFavorites(){
+        let vc:FavoritesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "FavoritesViewController")
+        self.present(vc, animated: true, completion: nil)
+    }
     
+    func launchScreenContacto(){
+        let vc:ContactoViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ContactoViewController")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func launchScreenFAQ(){
+        let vc:FAQViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "FAQViewController")
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
